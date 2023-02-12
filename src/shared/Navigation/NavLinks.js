@@ -7,7 +7,6 @@ const NavLinks = () => {
 		<ul className="nav-links">
 			<li>
 				<NavLink to="/" exact>
-					{' '}
 					All Users
 				</NavLink>
 			</li>
