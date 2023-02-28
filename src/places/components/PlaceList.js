@@ -1,4 +1,4 @@
-ulimport React from 'react';
+import React from 'react';
 import './PlaceList.css';
 import Card from '../../shared/UIElements/Card';
 import PlaceItem from './PlaceItem';
@@ -13,7 +13,21 @@ const PlaceList = (props) => {
 				</Card>
 			</div>
 		);
-		return(<ul className='place-list'>{props.item.map(place =><PlaceItem key={place.id} id={place.id} image={place.imageUrl} title={place.title} description={place.description} creatorId={place.creaatorId} coordinates={place.location}/>)}</ul>);
+	return (
+		<ul className="place-list">
+			{props.items.map((place) => (
+				<PlaceItem
+					key={place.id}
+					id={place.id}
+					image={place.imageUrl}
+					title={place.title}
+					description={place.description}
+					creatorId={place.creaatorId}
+					coordinates={place.location}
+				/>
+			))}
+		</ul>
+	);
 };
 
 export default PlaceList;
