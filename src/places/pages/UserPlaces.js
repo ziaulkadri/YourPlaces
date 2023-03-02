@@ -8,7 +8,7 @@ const DUMMY_PLACES = [
 		title: 'Emprire State Building',
 		description: 'One of the most famous sky scrapper in the world',
 		imageUrl:
-			'https://lh3.googleusercontent.com/p/AF1QipNVlM5lo7fIJrmvjN4EOrTMiQjDgDyTfw7ATdV6=s1360-w1360-h1020',
+			'https://upload.wikimedia.org/wikipedia/commons/d/d4/Manhattan_and_the_Central_Park_from_the_Empire_State_Building.jpg',
 		address: 'Skyscraper in New York City, New York',
 		location: {
 			lat: 40.748492,
@@ -21,7 +21,7 @@ const DUMMY_PLACES = [
 		title: ' State ',
 		description: 'One of the most famous sky scrapper in the world',
 		imageUrl:
-			'https://lh3.googleusercontent.com/p/AF1QipNVlM5lo7fIJrmvjN4EOrTMiQjDgDyTfw7ATdV6=s1360-w1360-h1020',
+			'https://upload.wikimedia.org/wikipedia/commons/d/d4/Manhattan_and_the_Central_Park_from_the_Empire_State_Building.jpg',
 		address: 'Skyscraper in New York City, New York',
 		location: {
 			lat: 40.748492,
@@ -34,7 +34,7 @@ const DUMMY_PLACES = [
 		title: '  Building',
 		description: 'One of the most famous sky scrapper in the world',
 		imageUrl:
-			'https://lh3.googleusercontent.com/p/AF1QipNVlM5lo7fIJrmvjN4EOrTMiQjDgDyTfw7ATdV6=s1360-w1360-h1020',
+			'https://upload.wikimedia.org/wikipedia/commons/d/d4/Manhattan_and_the_Central_Park_from_the_Empire_State_Building.jpg',
 		address: 'Skyscraper in New York City, New York',
 		location: {
 			lat: 40.748492,
@@ -47,7 +47,7 @@ const DUMMY_PLACES = [
 		title: 'yuututyuyu',
 		description: 'One of the most famous sky scrapper in the world',
 		imageUrl:
-			'https://lh3.googleusercontent.com/p/AF1QipNVlM5lo7fIJrmvjN4EOrTMiQjDgDyTfw7ATdV6=s1360-w1360-h1020',
+			'https://upload.wikimedia.org/wikipedia/commons/d/d4/Manhattan_and_the_Central_Park_from_the_Empire_State_Building.jpg',
 		address: 'Skyscraper in New York City, New York',
 		location: {
 			lat: 40.748492,
@@ -60,7 +60,7 @@ const DUMMY_PLACES = [
 		title: 'uhihii',
 		description: 'One of the most famous sky scrapper in the world',
 		imageUrl:
-			'https://lh3.googleusercontent.com/p/AF1QipNVlM5lo7fIJrmvjN4EOrTMiQjDgDyTfw7ATdV6=s1360-w1360-h1020',
+			'https://upload.wikimedia.org/wikipedia/commons/d/d4/Manhattan_and_the_Central_Park_from_the_Empire_State_Building.jpg',
 		address: 'Skyscraper in New York City, New York',
 		location: {
 			lat: 40.748492,
