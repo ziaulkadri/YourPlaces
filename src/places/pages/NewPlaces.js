@@ -1,10 +1,11 @@
 import React from 'react';
-
+import Input from '../../shared/FormElements/Input';
+import './NewPlaces.css';
 const NewPlaces = () => {
 	return (
-		<div>
-			<button>NewPlaces</button>
-		</div>
+		<form className="place-form">
+			<Input element="input" type="text" label="Title" />
+		</form>
 	);
 };
 
