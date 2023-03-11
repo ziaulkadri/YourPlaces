@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Button from '../../shared/FormElements/Button';
 import Input from '../../shared/FormElements/Input';
 import { useForm } from '../../shared/hooks/form-hook';
+import Card from '../../shared/UIElements/Card';
 import { VALIDATOR_REQUIRE, VALIDATOR_MINLENGTH } from '../../util/validators';
 import './PlaceForm.css';
 const DUMMY_PLACES = [
@@ -94,26 +95,32 @@ const UpdatePlace = (props) => {
 	const identifiedPlace = DUMMY_PLACES.find((p) => p.id === placeId);
 
 	useEffect(() => {
-		setFormData(
-			{
-				title: {
-					value: identifiedPlace.title,
-					isValid: true,
+		if (identifiedPlace) {
+			setFormData(
+				{
+					title: {
+						value: identifiedPlace.title,
+						isValid: true,
+					},
+					description: {
+						value: identifiedPlace.description,
+						isValid: true,
+					},
 				},
-				description: {
-					value: identifiedPlace.description,
-					isValid: true,
-				},
-			},
-			true
-		);
+				true
+			);
+		}
 		setIsLoading(false);
 	}, [setFormData, identifiedPlace]);
 
 	if (!identifiedPlace) {
 		return (
 			<div className="center">
-				<h2>Could not find place</h2>
+				<Card>
+					<h2 style={{ margin: '10px', padding: '10px' }}>
+						Could not find place
+					</h2>
+				</Card>
 			</div>
 		);
 	}
@@ -121,10 +128,13 @@ const UpdatePlace = (props) => {
 		event.preventDefault();
 		console.log(formState.inputs);
 	};
-	if (!isLoading) {
+	if (isLoading) {
 		return (
 			<div className="center">
-				<h2>Loading.....</h2>
+				<Card>
+					{' '}
+					<h2 style={{ margin: '10px', padding: '10px' }}>Loading.....</h2>
+				</Card>
 			</div>
 		);
 	}
